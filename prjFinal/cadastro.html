@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jogos</title>
+    <link rel="stylesheet" type="text/css" href="estilos1.css">
+
+<body>
+
+    <div class="menusenai">
+        <img src="./img/logosenai.jpg">
+    </div>
+
+    <!-- menu -->
+
+    <center>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="historia.html">Sobre</a></li>
+                <li><a href="#">Integrantes</a>
+                    <ul>
+                        <li><a href="https://liciantunes.github.io/">Alicie Antunes</a></li>
+                        <li><a href="https://giuliabia3.github.io/">Giulia Beatriz</a></li>
+                        <li><a href="https://luaals.github.io/">Luana Alves</a></li>
+                        <li><a href="https://paolacriss.github.io/">Paola Cristine</a></li>
+                    </ul>
+                </li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="download.html">Download</a></li>
+            </ul>
+        </nav>
+    </center>
+
+
+    <center>
+        <br><br><br>
+        <h1 class="h1">Cadastro de Jogos</h1>
+
+
+        <div id="cadastro">
+            <br><br><br>
+
+
+            <h2 class="title">Cadastro de Jogo</h2>
+            <br><br>
+
+            <form id="cadastroForm" enctype="multipart/form-data">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="plataform">Plataforma:</label>
+                <input type="text" id="plataform" name="plataform" required><br><br>
+
+                <label for="url">URL:</label>
+                <input type="text" id="url" name="url" required><br><br>
+
+                <label for="thumbnailpath">Thumbnail:</label>
+                <input type="text" id="thumbnailpath" name="thumbnailpath" required><br>
+
+                <br><br>
+                <button class="btn" type="button" onclick="cadastrarJogo()">✔Cadastrar</button>
+                <br>
+                <button class="btn" type="button" onclick="excluirJogo()">❌Excluir</button>
+            </form>
+
+            <br><br>
+            <div class="classe1">
+                <div id="divimagem">
+                    <br><br>
+                    <h2 class="title">Lista de Jogos</h2><br>
+                    <br>
+                    <button class="btn" type="button" onclick="ListarJogos()">🔎Pesquisar</button>
+                    <header>
+                    <br>
+                    </header>
+
+                    <aside>
+                        <!-- Barra lateral, se necessário -->
+                    </aside>
+
+                    <main>
+                        <table class="blueTable" id="jogos-tabela">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nome do Jogo</th>
+                                    <th>Plataforma</th>
+                                    <th>URL</th>
+                                    <th>Imagem</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- A tabela de funcionários será carregada aqui -->
+                            </tbody>
+                        </table>
+                    </main>
+                    <br><br><br>
+                </div>
+            </div>
+        </div>
+        <script src="Script.js"></script>
+    </center>
+
+    <div class="rodape">
+        <p>
+            blabla bla
+        </p>
+        <p>
+            blabla bla
+        </p>
+        <br>
+        
+        <br>
+        <p>
+            blabla bla
+        </p>
+    </div>
+</body>
+</head>
+
+</html>
